@@ -15,19 +15,21 @@
 <body>
     <h1>Quanto falta para meu aniversário?</h1>
 
-    <p>Digite a data do seu próximo aniversário:</p>
-    <div class="usuario">
-        <input type="date">
+    
+    <form name="form_main">
+        <label for="date_ini">Coloque a data de hoje: </label> <br>
+        <input name="date_ini" id="date_ini" type="date"> <br>
+        <label for="date_end">Coloque a data do seu próximo aniversário: </label>  <br>
+        <input name="date_end" id="date_end" type="date"> <br>
+        <div class="modal">
+            <label for="days">Faltam: </label> <br> 
+            <span id="days"></span> <br>
+            <label>dias para seu aniversário.</label> <br>
+        </div>
+        <button type="button" id="btn">Contar</button>
+    </form>
 
-        <br>
-
-        <button id="btn">Clique aqui!</button>
-    </div>
-    <div class="modal">
-        <p>Falta ... para seu aniversário!</p>
-    </div>
-
-    <script type="text/script" src="./script.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
