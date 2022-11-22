@@ -1,14 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: gray;
-    font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
 }
 body{
+    background-color: gray;
     text-align: center;
 }
 h1{
-    margin: 20px;
+    margin: 50px;
     font-size: 70px;
 }
 label{
@@ -22,6 +22,29 @@ input{
     height: 40px;
     margin: 30px;
     border-radius: 15px;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    padding: 30px;
+}
+.modal .conteudo{
+    background-color: blueviolet;
+    color: white;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 button{
     background-color: red;
