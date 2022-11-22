@@ -4,7 +4,7 @@
         font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: gray;
+    background-color: lightgrey;
     text-align: center;
 }
 h1{
@@ -46,15 +46,39 @@ input{
     flex-direction: column;
     align-items: center;
 }
-button{
+#btn{
     background-color: red;
     color: white;
     font-size: 30px;
     width: 200px;
     height: 70px;
-    margin: 70px;
+    margin: 40px;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
+}
+#menuFundo{
+    margin: 20px;
+}
+#corPadrao{
+    background-color: lightgrey;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#corAzul{
+    background-color: lightblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#corAmarela{
+    background-color: yellowgreen;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
     cursor: pointer;
 }
 span{
