@@ -1,25 +1,21 @@
-const second = 1000;
-const minute = second * 60;
-const hour = minute * 60;
-const day = hour * 24;
+const segundo = 1000;
+const minuto = segundo * 60;
+const hora = minuto * 60;
+const dia = hora * 24;
 const modal = document.querySelector('.modal');
 
-function countDays() {
- 	const hoje = new Date()
-	const dia = hoje.getDate().toString().padStart(2,'0')
-	const mes = String(hoje.getMonth() + 1).padStart(2,'0')
-	const ano = hoje.getFullYear()	
+function contaDias() {
+ 	let hoje = new Date()
  	let dataUsuario = new Date(document.form_main.dataUsuario.value);
+ 	let contagem = dataUsuario.getTime() - hoje.getTime();
 
- 	let diff = dataUsuario.getTime() - hoje.getTime();
-
- 	document.getElementById('days').innerText = Math.floor(diff / day);
+ 	document.getElementById('dias').innerText = Math.floor(contagem / dia);
 }
 
 const trocaModal = () => {
 	const estiloAtual = modal.style.display;
 	event.preventDefault();
-	countDays();
+	contaDias();
 	if(estiloAtual == 'block'){
 		modal.style.display = 'none';
 	}else{
