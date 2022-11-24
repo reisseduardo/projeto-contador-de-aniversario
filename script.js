@@ -9,7 +9,15 @@ function contaDias() {
  	let dataUsuario = new Date(document.form_main.dataUsuario.value);
  	let contagem = dataUsuario.getTime() - hoje.getTime();
 
- 	document.getElementById('dias').innerText = Math.floor(contagem / dia);
+ 	if(isNaN(contagem)){
+ 		document.getElementById('dias').innerText ='Coloque a data do seu próximo aniversário.'
+ 	}
+ 	if(contagem < 0){ 		
+ 		document.getElementById('dias').innerText = 'Você já comemorou este ano!'; 		
+ 	}
+ 	if(contagem > 0){
+ 	document.getElementById('dias').innerText = "Faltam " + Math.floor(contagem / dia) + " dias para o seu aniversário!";
+ 	}
 }
 
 const trocaModal = () => {
